@@ -1,5 +1,5 @@
-import { Button } from '~/components/ui/button'
 import type { Route } from './+types/home'
+import ModuloCalculator from '~/components/modulo-calculator'
 
 export function meta({}: Route.MetaArgs) {
   return [
@@ -10,8 +10,8 @@ export function meta({}: Route.MetaArgs) {
 
 export default function Home() {
   return (
-    <main>
-      <Button>Hello world</Button>
+    <main className="flex max-w-3xl flex-col items-center justify-center gap-4 p-8 mx-auto">
+      <ModuloCalculator />
     </main>
   )
 }
