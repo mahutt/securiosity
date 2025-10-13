@@ -15,6 +15,7 @@ export default function Home() {
     <main className="flex max-w-3xl flex-col items-center justify-center gap-4 p-8 mx-auto">
       <ModuloCalculator />
       <ProblemBox problemType={ProblemType.SquareAndMultiply} />
+      <ProblemBox problemType={ProblemType.ChineseRemainderTheorem} />
     </main>
   )
 }

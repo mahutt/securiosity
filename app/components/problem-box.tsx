@@ -2,6 +2,7 @@ import { ProblemType } from '~/types'
 import ProblemTypeDropdown from './problem-type-dropdown'
 import React from 'react'
 import SquareAndMultiply from './problems/square-and-multiply'
+import ChineseRemainderTheorem from './problems/chinese-remainder-theorem'
 
 export default function ProblemBox({
   problemType,
@@ -12,10 +13,10 @@ export default function ProblemBox({
 
   switch (problemType) {
     case ProblemType.ChineseRemainderTheorem:
-      problem = <div></div>
+      problem = <ChineseRemainderTheorem />
       break
     case ProblemType.SquareAndMultiply:
-      problem = SquareAndMultiply()
+      problem = <SquareAndMultiply />
       break
     default:
       problem = null
