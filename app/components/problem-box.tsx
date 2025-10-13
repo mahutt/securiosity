@@ -3,6 +3,7 @@ import ProblemTypeDropdown from './problem-type-dropdown'
 import React from 'react'
 import SquareAndMultiply from './problems/square-and-multiply'
 import ChineseRemainderTheorem from './problems/chinese-remainder-theorem'
+import EuclideanAlgorithm from './problems/euclidean-algorithm'
 
 export default function ProblemBox({
   problemType,
@@ -12,6 +13,9 @@ export default function ProblemBox({
   let problem: React.ReactElement | null = null
 
   switch (problemType) {
+    case ProblemType.EuclideanAlgorithm:
+      problem = <EuclideanAlgorithm />
+      break
     case ProblemType.ChineseRemainderTheorem:
       problem = <ChineseRemainderTheorem />
       break
